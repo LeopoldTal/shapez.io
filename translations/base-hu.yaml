@@ -29,45 +29,45 @@ steamPage:
     discordLinkShort: Hivatalos Discord
 
     intro: >-
-        You like automation games? Then you are in the right place!
+        Szereted az automatizálós játékokat? Akkor jó helyen vagy!
 
-        A Shapez.io egy relaxáló játék, amiben gyárakat kell építened hogy geometrikus alakzatokat gyárts automatizáltan. Ahogy szintet lépsz, az alakzatok egyre összetettebbek lesznek, és tovább kell terjeszkedned a végtelen pályán.
+        A Shapez.io egy nyugtató játék, amelyben gyárakat kell építened, hogy geometrikus alakzatokat gyárts és automatizálj. Ahogy szintet lépsz, az alakzatok egyre összetettebbek lesznek, és tovább kell terjeszkedned a végtelen pályán.
 
-        És ha ez nem lenne elég, exponenciálisan többet kell termelned az igények kielégítése érdekében - az egyetlen dolog ami segít, az a méret! Amég az alakzatokat csak feldolgozod a játék elején, később színezned kell őket - ehhez ki kell vonni és keverni a színeket!
+        És ha ez nem lenne elég, exponenciálisan többet kell termelned az igények kielégítése érdekében - az egyetlen dolog ami segít, az a méret! Amíg az alakzatokat csak feldolgozod a játék elején, később színezned kell őket - ehhez bányászni és keverni kell a színeket!
 
         A játék Steamen történő megvásárlása hozzáférést biztosít a teljes verzióhoz, de kipróbálhatod a játékot a shapez.io oldalon, és később dönthetsz!
 
     title_advantages: Önálló Verzió Előnyei
     advantages:
-        - <b>12 Új szint</b> összesen 26
-        - <b>18 Új épület</b> egy teljesen automatikus gyárhoz!
+        - <b>12 Új Sszint</b>, összesen 26
+        - <b>18 Új Épület</b> egy teljesen automatizált gyárhoz!
         - <b>20 Fejlesztési szint</b> sok órányi szórakozáshoz!
-        - <b>Vezetékek frissítés</b> egy teljesen új dimenzióhoz!
+        - <b>Vezetékek Frissítés</b> egy teljesen új dimenzióhoz!
         - <b>Sötét mód</b>!
         - Végtelen mentés
-        - Végtelen jelölő
-        - Támogass! ❤️
+        - Végtelen Jelölő
+        - Támogatod a Fejlesztőt ❤️
 
     title_future: Tervezett Tartalom
     planned:
         - Tervrajz Könyvtár
         - Steam Eredmények
         - Puzzle Mód
-        - Térkép
+        - Kistérkép
         - Modok
-        - Sandbox mode
+        - Homokozó játékmód
         - ... és még sok más!
 
     title_open_source: Ez a játék nyílt forráskódú!
     text_open_source: >-
-        Bárki hozzájárulhat, aktívan részt veszek a közösségben és próbálok áttekinteni minden javaslatot és figyelembe veszem a visszajelzéseket ahol lehetséges.
+        Bárki hozzájárulhat, aktívan részt veszek a közösségben és próbálok áttekinteni minden javaslatot és figyelembe veszem a visszajelzéseket, ahol lehetséges.
 
-        Feltétlenül nézd meg a trello táblámat a teljes ütemtervért!
+        Feltétlenül nézd meg a Trello táblámat a teljes ütemtervért!
 
     title_links: Linkek
 
     links:
-        discord: Eredeti Discord
+        discord: Hivatalos Discord
         roadmap: Ütemterv
         subreddit: Subreddit
         source_code: Forráskód (GitHub)
@@ -178,8 +178,8 @@ dialogs:
         title: Törlés megerősítése
         # TODO
         text: >-
-            Biztos hogy törölni akarod a Következő mentésedet?<br><br>
-            '<savegameName>' at level <savegameLevel><br><br>
+            Biztos hogy törölni akarod a következő mentésedet?<br><br>
+            '<savegameName>' <savegameLevel>-es szinten<br><br>
             Ezt nem lehet visszacsinálni!
 
     savegameDeletionError:
@@ -279,8 +279,8 @@ dialogs:
 
     entityWarning:
         # TODO
-        title: Performance Warning
-        desc: Sok épületet raktál le, ez csak egy emlékeztető hogy a játék nem támogat végtelen épületet - próbáld a gyáraidat összeszűkíteni!
+        title: Teljesítmény Figyelmeztetés
+        desc: Rengeteg épületet helyeztél le. Ez csak egy baráti emlékeztető, miszerint a játék nem tud végtelen épületet lekezelni - próbáld a gyáraidat összeszűkíteni!
 
 ingame:
     # This is shown in the top left corner and displays useful keybindings in
@@ -429,22 +429,20 @@ ingame:
 
     # Connected miners
     connectedMiners:
-        # TODO
-        one_miner: Egy bánya
-        n_miners: <amount> bánya
-        limited_items: Limited to <max_throughput>
+        one_miner: 1 Bánya
+        n_miners: <amount> Bánya
+        limited_items: Maximum <max_throughput>
 
     # Pops up in the demo every few minutes
     watermark:
-        # TODO
         title: Demó verzió
-        desc: Kattints ide hogy megnézd az Önálló Verzió előnyeit!
+        desc: Kattints ide, hogy megnézd az Önálló Verzió előnyeit!
         get_on_steam: Megvásárlás Steamen
 
     standaloneAdvantages:
         # TODO
-        title: Get the full version!
-        no_thanks: No, thanks!
+        title: Vásárold meg a Teljes Verziót!
+        no_thanks: Nem, köszönöm!
 
         points:
             levels:
@@ -457,7 +455,7 @@ ingame:
 
             savegames:
                 title: ∞ Mentés
-                desc: As many as your heart desires!
+                desc: Amennyit csak szeretnél!
 
             upgrades:
                 title: 20 Fejlesztési Szint
@@ -465,7 +463,7 @@ ingame:
 
             markers:
                 title: ∞ Jelölő
-                desc: Never get lost in your factory!
+                desc: Hogy mindig tudd, mi hol van!
 
             wires:
                 title: Vezetékek
@@ -473,7 +471,7 @@ ingame:
 
             darkmode:
                 title: Sötét Mód
-                desc: Megoldja a szemfájdalmakat!
+                desc: Ha már fáj a szemed!
 
             support:
                 title: Támogass
@@ -497,7 +495,7 @@ shopUpgrades:
 # Buildings and their name / description
 buildings:
     hub:
-        # TODO, ezt okosan kell
+        # TODO, ezt ettől okosabban kell :)
         deliver: Szállíts
         toUnlock: hogy feloldd
         levelShortcut: Szint
@@ -615,7 +613,7 @@ buildings:
 #
         default:
             name: &storage Raktár
-            description: Stores excess items, up to a given capacity. Prioritizes the left output and can be used as an overflow gate.
+            description: Eltárolja a fölösleges elemeket, egy meghatározott kapacitásig. Prioritizes the left output and can be used as an overflow gate.
 
     wire:
         default:
@@ -639,22 +637,21 @@ buildings:
     lever:
         default:
             name: &lever Kapcsoló
-            description: Kapcsolni lehet hogy egy logikai értéket (1 vagy 0) bocsásson ki a vezeték rétegen, amit lehet használni hogy irányítson épületeket, például egy alakzat szűrőt.
+            description: Logikai 1 vagy 0 értéket bocsát ki a Vezeték rétegen, amivel épületeket, például alakzat szűrőket lehet vezérelni.
 
     logic_gate:
         default:
             name: ÉS Kapu
-            # finomítani
-            description: Kibocsát egy logokai érték "1"-et ha mindkét érték igaz. (Az igaz alakzatot, színt vagy logikai értek "1"-et jelent)
+            description: Igaz (1) a kimenete, ha mindkét bemenet igaz.
         not:
-            name: NEM Gate
-            description: Kibocsát egy logokai érték "1" ha az érték nem igaz. (Az igaz alakzatot, színt vagy logikai értek "1"-et jelent)
+            name: NEM Kapu
+            description: Igaz (1) a kimenete, ha a bemenet Hamis (0), és fordítva.
         xor:
-            name: XOR Gate
-            description: Kibocsát egy logokai érték "1" ha az egyik érték igaz, de nem mindkettő. (Az igaz alakzatot, színt vagy logikai értek "1"-et jelent)
+            name: Kizáró VAGY Kapu
+            description: Igaz (1) a kimenete, ha csak az egyik bemenet igaz.
         or:
-            name: VAGY Gate
-            description: Kibocsát egy logokai érték "1" ha az egyik érték igaz. (Az igaz alakzatot, színt vagy logikai értek "1"-et jelent)
+            name: VAGY Kapu
+            description: Igaz (1) a kimenete, ha legalább az egyik bemenet igaz.
 
     transistor:
         default:
@@ -1195,7 +1192,7 @@ tips:
     - A <b>SHIFT</b> nyomva tartásával könnyedén helyezhetsz le hosszú Futószalagokat.
     - A Vágók mindig függőleges irányban vágnak, mindegy, milyen irányban állnak.
     - A fehér szín előállításához keverd össze mindhárom színt.
-    - A Tároló a bal oldali bemenetet részesíti előnyben.
+    - A Raktár a bal oldali kimenetet részesíti előnyben.
     - Szánj időt újrafelhasználható báziselemek tervezésére - megéri!
     - A <b>CTRL</b> lenyomva tartásával több épületet helyezhetsz le egymás után.
     - Az <b>ALT</b> lenyomva tartásával megfordíthatod a Futószalagok irányát.
@@ -1218,6 +1215,7 @@ tips:
     - Ha közel építesz a Központhoz, útban lesz a következő projektjeidnek.
     - A Fejlesztések lapon a gombostű ikon megnyomásával kitűzheted a képernyőre az aktuális alakzatot.
     - Keverd össze mind a három alapszínt, hogy Fehéret csinálj!
+    # TODO
     - You have an infinite map, don't cramp your factory, expand!
     - Also try Factorio! It's my favorite game.
     - The quad cutter cuts clockwise starting from the top right!
