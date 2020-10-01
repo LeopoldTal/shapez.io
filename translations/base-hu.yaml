@@ -1173,8 +1173,9 @@ demo:
     settingNotAvailable: Not available in the demo.
 
 tips:
-    - A Központ mindenféle bemenetet elfogad, nemcsak az éppen aktuális alakzatot!
-    - Igyekezz moduláris gyárakat építeni - kifizetődik a befektetésed!
+    - A Központ mindenféle bemenetet elfogad, nemcsak az éppen aktuálisan kívánt alakzatot!
+    - Igyekezz moduláris gyárakat építeni - megéri!
+    - Igyekezz kompakt gyárakat építeni - megéri!
     - Ne építs közvetlenül a Központ közelébe, mert óriási káoszt okozhat!
     - Ha az egymásra építés nem működne, próbáld felcserélni a bemeneteket.
     - A szalagtervező irányát az <b>R</b> billentyűvel állíthatod.
@@ -1184,40 +1185,39 @@ tips:
     - A játék előrehaladtával további épületvariánsokat oldhatsz fel!
     - Az épületek különböző fajtái között a <b>T</b> gombbal válthatsz.
     - A szimmetria kulcsfontosságú!
-    - A különböző szintű Alagutak egymásra fűzhetők.
-    - Igyekezz kompakt gyárakat építeni - kifizetődik a befektetésed!
+    - A hatékonyság kulcsfontosságú!
+    - A különböző szintű Alagutak egymásba fűzhetők.
     - A Festőnek létezik egy tükrözött változata is, amit a <b>T</b>-vel választhatsz ki.
     - A megfelelő épület arányokkal maximalizálható a hatékonyság.
     - A legmagasabb szinten 5 Bánya teljesen megtölt egy Futószalagot.
     - Ne feledkezz meg az Alagutakról!
-    - You don't need to divide up items evenly for full efficiency.
-    - Holding <b>SHIFT</b> will activate the belt planner, letting you place long lines of belts easily.
-    - Cutters always cut vertically, regardless of their orientation.
-    - To get white mix all three colors.
-    - The storage buffer prioritises the left output.
-    - Invest time to build repeatable designs - it's worth it!
-    - Holding <b>CTRL</b> allows to place multiple buildings.
-    - You can hold <b>ALT</b> to invert the direction of placed belts.
-    - Efficiency is key!
-    - Shape patches that are further away from the hub are more complex.
-    - Machines have a limited speed, divide them up for maximum efficiency.
-    - Use balancers to maximize your efficiency.
-    - Organization is important. Try not to cross conveyors too much.
-    - Plan in advance, or it will be a huge chaos!
-    - Don't remove your old factories! You'll need them to unlock upgrades.
-    - Try beating level 20 on your own before seeking for help!
-    - Don't complicate things, try to stay simple and you'll go far.
-    - You may need to re-use factories later in the game. Plan your factories to be re-usable.
-    - Sometimes, you can find a needed shape in the map without creating it with stackers.
-    - Full windmills/pinwheels can never spawn naturally.
-    - Color your shapes before cutting for maximum efficiency.
-    - With modules, space is merely a perception; a concern for mortal men.
-    - Make a separate blueprint factory. They're important for modules.
-    - Have a closer look at the color mixer, and your questions will be answered.
-    - Use <b>CTRL</b> + Click to select an area.
-    - Building too close to the hub can get in the way of later projects.
-    - The pin icon next to each shape in the upgrade list pins it to the screen.
-    - Mix all three primary colors to make white!
+    - A teljes hatékonyság eléréséhez nem szükséges az elemeket egyforma arányban felosztani.
+    - A <b>SHIFT</b> nyomva tartásával könnyedén helyezhetsz le hosszú Futószalagokat.
+    - A Vágók mindig függőleges irányban vágnak, mindegy, milyen irányban állnak.
+    - A fehér szín előállításához keverd össze mindhárom színt.
+    - A Tároló a bal oldali bemenetet részesíti előnyben.
+    - Szánj időt újrafelhasználható báziselemek tervezésére - megéri!
+    - A <b>CTRL</b> lenyomva tartásával több épületet helyezhetsz le egymás után.
+    - Az <b>ALT</b> lenyomva tartásával megfordíthatod a Futószalagok irányát.
+    - A Központtól távolabb eső bányászható alakzatok patches that are further away from the hub are more complex.
+    - A gépeknek korlátozott sebességük van, csinálj belőlük többet a maximális hatékonyságért.
+    - Használj Elosztókat a maximális hatékonyságért.
+    - A rendszerezettség fontos. Igyekezz a lehető legkevesebbszer keresztezni Futószalagokat.
+    - Tervezz előre, mert óriási káosz lehet a vége!
+    - Ne rombold le a régi gyáraidat! Szükséges lesz rájuk a Fejlesztésekhez.
+    - Próbáld megdönteni a 20. Szintet, mielőtt segítséget kérnél!
+    - Ne bonyolítsd túl a dolgokat; csináld egyszerűen és sokra viheted.
+    - Bizonyos gyárakat újra kell használnod a játék során. Tervezd újrahasználhatóra a gyáraidat.
+    - Bizonyos alakzatokat megtalálsz a pályán elszórva, így nem kell őket összeraknod.
+    - Teljes szélmalom alakzatokat nem fogsz találni a pályán, csak részlegeseket.
+    - Színezd be az alakzatodat vágás előtt a maximális hatékonyság érdekében.
+    - Ha modulárisan építkezel, akkor nem számít a hely.
+    - Csinálj egy különálló Tervrajz-gyárat. A modulokhoz később hasznos lesz.
+    - Nézd meg közelebbről a Színkeverőt, és minden kérdésed megválaszolódik.
+    - A <b>CTRL</b> + Bal klikkel ki tudsz választani egy területet.
+    - Ha közel építesz a Központhoz, útban lesz a következő projektjeidnek.
+    - A Fejlesztések lapon a gombostű ikon megnyomásával kitűzheted a képernyőre az aktuális alakzatot.
+    - Keverd össze mind a három alapszínt, hogy Fehéret csinálj!
     - You have an infinite map, don't cramp your factory, expand!
     - Also try Factorio! It's my favorite game.
     - The quad cutter cuts clockwise starting from the top right!
