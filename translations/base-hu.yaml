@@ -31,47 +31,47 @@ steamPage:
     intro: >-
         You like automation games? Then you are in the right place!
 
-        shapez.io is a relaxed game in which you have to build factories for the automated production of geometric shapes. As the level increases, the shapes become more and more complex, and you have to spread out on the infinite map.
+        A Shapez.io egy relaxáló játék, amiben gyárakat kell építened hogy geometrikus alakzatokat gyárts automatizáltan. Ahogy szintet lépsz, az alakzatok egyre összetettebbek lesznek, és tovább kell terjeszkedned a végtelen pályán.
 
-        And as if that wasn't enough, you also have to produce exponentially more to satisfy the demands - the only thing that helps is scaling! While you only have to process shapes at the beginning, you will later have to color them - by extracting and mixing colors!
+        És ha ez nem lenne elég, exponenciálisan többet kell termelned az igények kielégítése érdekében - az egyetlen dolog ami segít, az a méret! Amég az alakzatokat csak feldolgozod a játék elején, később színezned kell őket - ehhez ki kell vonni és keverni a színeket!
 
-        Buying the game on Steam gives you access to the full version, but you can also play a demo at shapez.io first and decide later!
+        A játék Steamen történő megvásárlása hozzáférést biztosít a teljes verzióhoz, de kipróbálhatod a játékot a shapez.io oldalon, és később dönthetsz!
 
-    title_advantages: Standalone Advantages
+    title_advantages: Önálló Verzió Előnyei
     advantages:
-        - <b>12 New Levels</b> for a total of 26 levels
-        - <b>18 New Buildings</b> for a fully automated factory!
-        - <b>20 Upgrade Tiers</b> for many hours of fun!
-        - <b>Wires Update</b> for an entirely new dimension!
-        - <b>Dark Mode</b>!
-        - Unlimited Savegames
-        - Unlimited Markers
-        - Support me! ❤️
+        - <b>12 Új szint</b> összesen 26
+        - <b>18 Új épület</b> egy teljesen automatikus gyárhoz!
+        - <b>20 Fejlesztési szint</b> sok órányi szórakozáshoz!
+        - <b>Vezetékek frissítés</b> egy teljesen új dimenzióhoz!
+        - <b>Sötét mód</b>!
+        - Végtelen mentés
+        - Végtelen jelölő
+        - Támogass! ❤️
 
-    title_future: Planned Content
+    title_future: Tervezett Tartalom
     planned:
-        - Blueprint Library
-        - Steam Achievements
-        - Puzzle Mode
-        - Minimap
-        - Mods
+        - Tervrajz Könyvtár
+        - Steam Eredmények
+        - Puzzle Mód
+        - Térkép
+        - Modok
         - Sandbox mode
-        - ... and a lot more!
+        - ... és még sok más!
 
-    title_open_source: This game is open source!
+    title_open_source: Ez a játék nyílt forráskódú!
     text_open_source: >-
-        Anybody can contribute, I'm actively involved in the community and attempt to review all suggestions and take feedback into consideration where possible.
+        Bárki hozzájárulhat, aktívan részt veszek a közösségben és próbálok áttekinteni minden javaslatot és figyelembe veszem a visszajelzéseket ahol lehetséges.
 
-        Be sure to check out my trello board for the full roadmap!
+        Feltétlenül nézd meg a trello táblámat a teljes ütemtervért!
 
-    title_links: Links
+    title_links: Linkek
 
     links:
-        discord: Official Discord
-        roadmap: Roadmap
+        discord: Eredeti Discord
+        roadmap: Ütemterv
         subreddit: Subreddit
-        source_code: Source code (GitHub)
-        translate: Help translate
+        source_code: Forráskód (GitHub)
+        translate: Segíts lefordítani
 
 global:
     loading: Betöltés
@@ -178,9 +178,9 @@ dialogs:
         title: Törlés megerősítése
         # TODO
         text: >-
-            Are you sure you want to delete the following game?<br><br>
+            Biztos hogy törölni akarod a Következő mentésedet?<br><br>
             '<savegameName>' at level <savegameLevel><br><br>
-            This can not be undone!
+            Ezt nem lehet visszacsinálni!
 
     savegameDeletionError:
         title: Sikertelen törlés
@@ -229,7 +229,7 @@ dialogs:
             Egy csomó épületet akarsz egyszerre törölni (egészen pontosan <count>-t)! Biztos, hogy ezt szeretnéd?
 
     massCutConfirm:
-        title: Confirm cut
+        title: Kivágás megerősítése
         desc: >-
             Egy csomó épületet akarsz egyszerre kivágni (egészen pontosan <count>-t)! Biztos, hogy ezt szeretnéd?
 
@@ -260,7 +260,7 @@ dialogs:
 
     editSignal:
         # TODO
-        title: Set Signal
+        title: Set Signal # ?
         descItems: >-
             Choose a pre-defined item:
         descShortKey: ... or enter the <strong>short key</strong> of a shape (Which you can generate <link>here</link>)
@@ -274,13 +274,13 @@ dialogs:
 
     renameSavegame:
         # TODO
-        title: Rename Savegame
-        desc: You can rename your savegame here.
+        title: Mentés átnevezése
+        desc: Itt tudod átnevezni a mentésedet.
 
     entityWarning:
         # TODO
         title: Performance Warning
-        desc: You have placed a lot of buildings, this is just a friendly reminder that the game can not handle an endless number of buildings - try to keep your factories compact!
+        desc: Sok épületet raktál le, ez csak egy emlékeztető hogy a játék nem támogat végtelen épületet - próbáld a gyáraidat összeszűkíteni!
 
 ingame:
     # This is shown in the top left corner and displays useful keybindings in
@@ -430,16 +430,16 @@ ingame:
     # Connected miners
     connectedMiners:
         # TODO
-        one_miner: 1 Extractor
-        n_miners: <amount> Extractors
+        one_miner: Egy bánya
+        n_miners: <amount> bánya
         limited_items: Limited to <max_throughput>
 
     # Pops up in the demo every few minutes
     watermark:
         # TODO
-        title: Demo version
-        desc: Click here to see the advantages of the standalone version!
-        get_on_steam: Get on Steam
+        title: Demó verzió
+        desc: Kattints ide hogy megnézd az Önálló Verzió előnyeit!
+        get_on_steam: Megvásárlás Steamen
 
     standaloneAdvantages:
         # TODO
@@ -448,36 +448,36 @@ ingame:
 
         points:
             levels:
-                title: 12 New Levels
-                desc: For a total of 26 levels!
+                title: 12 Új Szint
+                desc: Összesen 26
 
             buildings:
-                title: 18 New Buildings
-                desc: Fully automate your factory!
+                title: 18 Új Épület
+                desc: Egy teljesen automatikus gyárhoz!
 
             savegames:
-                title: ∞ Savegames
+                title: ∞ Mentés
                 desc: As many as your heart desires!
 
             upgrades:
-                title: 20 Upgrade Tiers
-                desc: This demo version has only 5!
+                title: 20 Fejlesztési Szint
+                desc: A Demó Verzió csak 5-öt tartalmaz!
 
             markers:
-                title: ∞ Markers
+                title: ∞ Jelölő
                 desc: Never get lost in your factory!
 
             wires:
-                title: Wires
-                desc: An entirely new dimension!
+                title: Vezetékek
+                desc: Egy teljesen új dimenzióhoz!
 
             darkmode:
-                title: Dark Mode
-                desc: Stop hurting your eyes!
+                title: Sötét Mód
+                desc: Megoldja a szemfájdalmakat!
 
             support:
-                title: Support me
-                desc: I develop it in my spare time!
+                title: Támogass
+                desc: A játékot továbbfejlesztem szabadidőmben
 
 # All shop upgrades
 shopUpgrades:
@@ -498,10 +498,10 @@ shopUpgrades:
 buildings:
     hub:
         # TODO, ezt okosan kell
-        deliver: Deliver
-        toUnlock: to unlock
-        levelShortcut: LVL
-        endOfDemo: End of Demo
+        deliver: Szállíts
+        toUnlock: hogy feloldd
+        levelShortcut: Szint
+        endOfDemo: Demó Verzió vége
 
     belt:
         default:
@@ -614,13 +614,13 @@ buildings:
 #    ╚═╝    ╚═════╝ ╚═════╝  ╚═════╝
 #
         default:
-            name: &storage Storage
+            name: &storage Raktár
             description: Stores excess items, up to a given capacity. Prioritizes the left output and can be used as an overflow gate.
 
     wire:
         default:
-            name: &wire Wire
-            description: &wire_desc Transfers signals, which can be items, colours or booleans (1 or 0). Differently-coloured wires do not connect to each other.
+            name: &wire Vezeték
+            description: &wire_desc Jeleket visz, ami lehet alakzat, szín vagy logikai érték (1 vagy 0). Különböző színű vezetékek nem kapcsolódnak egymáshoz.
 
         second:
             name: *wire
@@ -633,36 +633,41 @@ buildings:
 
     constant_signal:
         default:
-            name: &constant_signal Constant Signal
-            description: Emits a constant signal, which can be either a shape, color or boolean (1 or 0).
+            name: &constant_signal Állandó jel
+            description: Állandó jelet bocsát ki, ami lehet egy alakzat, szín vagy logikai érték (1 vagy 0).
 
     lever:
         default:
-            name: &lever Switch
-            description: Can be toggled to emit a boolean signal (1 or 0) on the wires layer, which can then be used to control components, for example an item filter.
+            name: &lever Kapcsoló
+            description: Kapcsolni lehet hogy egy logikai értéket (1 vagy 0) bocsásson ki a vezeték rétegen, amit lehet használni hogy irányítson épületeket, például egy alakzat szűrőt.
 
     logic_gate:
         default:
-            name: AND Gate
-            description: Emits a boolean "1" if both inputs are truthy. (Truthy means shape, color or boolean "1")
+            name: ÉS Kapu
+            # finomítani
+            description: Kibocsát egy logokai érték "1"-et ha mindkét érték igaz. (Az igaz alakzatot, színt vagy logikai értek "1"-et jelent)
         not:
-            name: NOT Gate
-            description: Emits a boolean "1" if the input is not truthy. (Truthy means shape, color or boolean "1")
+            name: NEM Gate
+            description: Kibocsát egy logokai érték "1" ha az érték nem igaz. (Az igaz alakzatot, színt vagy logikai értek "1"-et jelent)
         xor:
             name: XOR Gate
-            description: Emits a boolean "1" if one of the inputs is truthy, but not both. (Truthy means shape, color or boolean "1")
+            description: Kibocsát egy logokai érték "1" ha az egyik érték igaz, de nem mindkettő. (Az igaz alakzatot, színt vagy logikai értek "1"-et jelent)
         or:
-            name: OR Gate
-            description: Emits a boolean "1" if one of the inputs is truthy. (Truthy means shape, color or boolean "1")
+            name: VAGY Gate
+            description: Kibocsát egy logokai érték "1" ha az egyik érték igaz. (Az igaz alakzatot, színt vagy logikai értek "1"-et jelent)
 
     transistor:
         default:
-            name: &transistor Transistor
-            description: &transistor_desc Forwards the bottom input if the side input is truthy (a shape, color or "1").
+            name: &transistor Tranzisztor
+            description: &transistor_desc Továbbítja az alsó jelet, ha az oldal jel igaz (egy alakzat, szín vagy "1").
 
         mirrored:
             name: *transistor
             description: *transistor_desc
+
+#
+# Itt járok -SGG
+#
 
     filter:
         default:
