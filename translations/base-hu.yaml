@@ -176,10 +176,9 @@ dialogs:
 
     confirmSavegameDelete:
         title: Törlés megerősítése
-        # TODO
         text: >-
             Biztos hogy törölni akarod a következő mentésedet?<br><br>
-            '<savegameName>' <savegameLevel>-es szinten<br><br>
+            '<savegameName>' <savegameLevel>. szinten<br><br>
             Ezt nem lehet visszacsinálni!
 
     savegameDeletionError:
@@ -273,12 +272,10 @@ dialogs:
         desc: A teljes bázisod képének lementését választottad. Vedd figyelembe, hogy ez nagy méretű bázisoknál igen lassú lehet, de akár a játék összeomlását is okozhatja!
 
     renameSavegame:
-        # TODO
         title: Mentés átnevezése
         desc: Itt tudod átnevezni a mentésedet.
 
     entityWarning:
-        # TODO
         title: Teljesítmény Figyelmeztetés
         desc: Rengeteg épületet helyeztél le. Ez csak egy baráti emlékeztető, miszerint a játék nem tud végtelen épületet lekezelni - próbáld a gyáraidat összeszűkíteni!
 
@@ -440,7 +437,6 @@ ingame:
         get_on_steam: Megvásárlás Steamen
 
     standaloneAdvantages:
-        # TODO
         title: Vásárold meg a Teljes Verziót!
         no_thanks: Nem, köszönöm!
 
@@ -868,192 +864,191 @@ storyRewards:
             You have reached the end of the demo version!
 
 settings:
-    title: Settings
+    title: Beállítások
     categories:
-        general: General
-        userInterface: User Interface
-        advanced: Advanced
-        performance: Performance
+        general: Általános
+        userInterface: Felhasználói Felület
+        advanced: Haladó
+        performance: Teljesítmény
 
     versionBadges:
-        dev: Development
-        staging: Staging
-        prod: Production
-    buildDate: Built <at-date>
+        dev: Fejlesztői
+        staging: Teszt
+        prod: Stabil
+    buildDate: Dátum <at-date>
 
     rangeSliderPercentage: <amount> %
 
     labels:
         uiScale:
-            title: Interface scale
+            title: Felület felskálázása
             description: >-
-                Changes the size of the user interface. The interface will still scale based on your device's resolution, but this setting controls the amount of scaling.
+                A felhasználói felületen található elemek mérete változik a képernyőfelbontásoddal, ez a beállítás ennek a felméretezésnek az mértékét állítja.
             scales:
-                super_small: Super small
-                small: Small
-                regular: Regular
-                large: Large
-                huge: Huge
+                super_small: Apró
+                small: Kicsi
+                regular: Normál
+                large: Nagy
+                huge: Hatalmas
 
         autosaveInterval:
-            title: Autosave Interval
+            title: Automatikus mentés gyakorisága
             description: >-
-                Controls how often the game saves automatically. You can also disable it entirely here.
+                Az automatikus játékmentés gyakorisága, vagy annak kikapcsolása
 
             intervals:
-                one_minute: 1 Minute
-                two_minutes: 2 Minutes
-                five_minutes: 5 Minutes
-                ten_minutes: 10 Minutes
-                twenty_minutes: 20 Minutes
-                disabled: Disabled
+                one_minute: 1 Perc
+                two_minutes: 2 Perc
+                five_minutes: 5 Perc
+                ten_minutes: 10 Perc
+                twenty_minutes: 20 Perc
+                disabled: Kikapcsolva
 
         scrollWheelSensitivity:
-            title: Zoom sensitivity
+            title: Nagyítás érzékenysége
             description: >-
-                Changes how sensitive the zoom is (Either mouse wheel or trackpad).
+                A ki-bezomoolás mértékét állítja (Egérgörgő vagy érintőpanel).
             sensitivity:
-                super_slow: Super slow
-                slow: Slow
-                regular: Regular
-                fast: Fast
-                super_fast: Super fast
+                super_slow: Szuperlassú
+                slow: Lassú
+                regular: Normál
+                fast: Gyors
+                super_fast: Szupergyors
 
         movementSpeed:
-            title: Movement speed
+            title: Kameramozgás
             description: >-
-                Changes how fast the view moves when using the keyboard or moving the mouse to the screen borders.
+                A kamera mozgásának gyorsaságát állítja, ha a kurzorbillentyűket használod, vagy a képernyő szélére húzod az egeret.
             speeds:
-                super_slow: Super slow
-                slow: Slow
-                regular: Regular
-                fast: Fast
-                super_fast: Super Fast
-                extremely_fast: Extremely Fast
+                super_slow: Szuperlassú
+                slow: Lassú
+                regular: Normál
+                fast: Gyors
+                super_fast: Szupergyors
+                extremely_fast: Extrém Gyors
 
         language:
-            title: Language
+            title: Nyelv
             description: >-
-                Change the language. All translations are user-contributed and might be incomplete!
+                A játék megjelenítési nyelve. A fordításokat a rajongók végzik, ezért lehet, hogy nem teljesek.
 
         enableColorBlindHelper:
-            title: Color Blind Mode
+            title: Színtévesztő Mód
             description: >-
-                Enables various tools which allow you to play the game if you are color blind.
+                Színtévesztő vagy színvak felhasználók számára is játszhatóvá teszi a játékot.
 
         fullscreen:
-            title: Fullscreen
+            title: Teljes képernyő
             description: >-
-                It is recommended to play the game in fullscreen to get the best experience. Only available in the standalone.
+                A legjobb élmény érdekében ajánlott a teljes képernyős módot bekapcsolni. Csak az Önálló Verzióban elérhető.
 
         soundsMuted:
-            title: Mute Sounds
+            title: Hangok Némítása
             description: >-
-                If enabled, mutes all sound effects.
+                Bekapcsolásával minden hangeffekt megszűnik.
 
         musicMuted:
-            title: Mute Music
+            title: Zene Némítása
             description: >-
-                If enabled, mutes all music.
+                Bekapcsolásával minden zene megszűnik.
 
         soundVolume:
-            title: Sound Volume
+            title: Hangok Hangereje
             description: >-
-                Set the volume for sound effects
+                A játék hangjainak hangerejét állítja.
 
         musicVolume:
-            title: Music Volume
+            title: Zene Hangereje
             description: >-
-                Set the volume for music
+                Zene hangerőt állítja.
 
         theme:
-            title: Game theme
+            title: Téma
             description: >-
-                Choose the game theme (light / dark).
+                Sötét és Világos mód közötti váltás.
             themes:
-                dark: Dark
-                light: Light
+                dark: Sötét
+                light: Világos
 
         refreshRate:
-            title: Tick Rate
+            title: Tick / mp
             description: >-
-                This determines how many game ticks happen per second. In general, a higher tick rate means better precision but also worse performance. On lower tickrates, the throughput may not be exact.
+                Megszabja, hogy hány Tick történik másodpercenként. Általánosságban, minél magasabb a Tick érték, annál pontosabb az egérmozgás és a lehelyezés, viszont annál gyengébb a teljesítmény. Alacsonyabb Tick érték esetén a Futószalagok áteresztőképessége nem mindig számolódik pontosan.
 
         alwaysMultiplace:
-            title: Multiplace
+            title: Folyamatos Lehelyezés
             description: >-
-                If enabled, all buildings will stay selected after placement until you cancel it. This is equivalent to constantly holding SHIFT.
+                Ha be van kapcsolva, akkor az épület lehelyezés után kiválasztva marad, megszakításig. Ez egyenlő azzal, mintha nyomnád a SHIFT-et lehelyezéskor.
 
         offerHints:
-            title: Hints & Tutorials
+            title: Tippek és Oktatás
             description: >-
-                Whether to offer hints and tutorials while playing. Also hides certain UI elements up to a given level to make it easier to get into the game.
+                Tippek és oktatóanyagok bekapcsolása játék közben. Elrejt bizonyos haladó felhasználói felületi elemeket, hogy könnyítse a játék megtanulását.
 
         enableTunnelSmartplace:
-            title: Smart Tunnels
+            title: Intelligens Alagutak
             description: >-
-                When enabled, placing tunnels will automatically remove unnecessary belts. This also enables you to drag tunnels and excess tunnels will get removed.
+                ha engedélyezve van, akkor Alagutak lehelyezésekor az útban lévő Futószalagok automatikusan törlődnek. Továbbá lehetővé teszi, hogy az Alagutakat húzással helyezd le, eltávolítva a szükségtelen Alagutakat.
 
         vignette:
-            title: Vignette
+            title: Vignetta
             description: >-
-                Enables the vignette, which darkens the screen corners and makes text easier to read.
+                Elsötétíti a képernyő sarkait, így könnyebben olvashatók az ott megjelenő szövegek.
 
         rotationByBuilding:
-            title: Rotation by building type
+            title: Épületek Irányának Megjegyzése
             description: >-
-                Each building type remembers the rotation you last set it to individually. This may be more comfortable if you frequently switch between placing different building types.
+                Minden épület megjegyzi a legutóbbi forgásirányát, amire beállítottad. Ez nagyon hasznos lehet, ha gyakran váltogatsz épülettípusokat, amiknek a legutóbb beállított irányba kell állniuk.
 
         compactBuildingInfo:
-            title: Compact Building Infos
+            title: Rövid Épület Információk
             description: >-
-                Shortens info boxes for buildings by only showing their ratios. Otherwise a description and image is shown.
+                A kiválasztot tépületnek csak az arányát mutatja, szöveges leírást és képet nem.
 
         disableCutDeleteWarnings:
-            title: Disable Cut/Delete Warnings
+            title: Törlés/Kivágás Figyelmeztetések Kikapcsolása
             description: >-
-                Disables the warning dialogues brought up when cutting/deleting more than 100 entities.
+                Kikapcsolja a megerősítő ablakokat, ha 100-nl több épületet szeretnél kivágni vagy törölni.
 
         lowQualityMapResources:
-            title: Low Quality Map Resources
+            title: Alacsony Minőségű Erőforrás Ikonok
             description: >-
-                Simplifies the rendering of resources on the map when zoomed in to improve performance.
-                It even looks cleaner, so be sure to try it out!
+                Leegyszerűsíti az erőforrások kirajzolását a térképen bezoomolt állapotban a teljesítmény javítása érdekében. Érdemes kipróbálni!
 
         disableTileGrid:
-            title: Disable Grid
+            title: Rács kikapcsolása
             description: >-
-                Disabling the tile grid can help with the performance. This also makes the game look cleaner!
+                A rácsvonalak kikapcsolásával javítható a teljesítmény, és letisztultabbá tehető a játék felülete!
 
         clearCursorOnDeleteWhilePlacing:
-            title: Clear Cursor on Right Click
+            title: Kijelölés Megszüntetése Jobbklikkre
             description: >-
-                Enabled by default, clears the cursor whenever you right click while you have a building selected for placement. If disabled, you can delete buildings by right-clicking while placing a building.
+                Megszünteti a kijelölést az egér jobbgombra kattintva. Ha ki van kapcsolva, akkor úgy tudsz épületeket törölni, ha építési módban jobbklikkelsz.
 
         lowQualityTextures:
-            title: Low quality textures (Ugly)
+            title: Alacsony Minőségű Textúrák (Ronda)
             description: >-
-                Uses low quality textures to save performance. This will make the game look very ugly!
+                Alacsony minőségű textúrák használata a teljesítmény javítása érdekében. Vigyázat, a játék elég ronda lesz tőle!
 
         displayChunkBorders:
-            title: Display Chunk Borders
+            title: Térképdarabok Határainak Mutatása
             description: >-
-                The game is divided into chunks of 16x16 tiles, if this setting is enabled the borders of each chunk are displayed.
+                A játék 16×16-os térképdarabokra van osztva. Ennek a funkciónak a bekapcsolásával láthatóvá válnak ezek a határok.
 
         pickMinerOnPatch:
-            title: Select extractor on resource patch
+            title: Bánya Automatikus Kiválasztása
             description: >-
-                Enabled by default, selects the extractor if you use the pipette when hovering a resource patch.
+                Ha egy erőforráson használod a Pipettát, akkor automatikusan a kiválasztja a Bányát leépítéshez.
 
         simplifiedBelts:
-            title: Simplified Belts (Ugly)
+            title: Egyszerűsített Futószalagok (Ronda)
             description: >-
-                Does not render belt items except when hovering the belt to save performance. I do not recommend to play with this setting if you do not absolutely need the performance.
+                Nem mutatja a Futószalagokon található elemeket, csak ha nagyon közel mész, hogy javítsa a teljesítményt. Erősen ellenjavallott, hacsak nincs szükséged minden utolsó csepp teljesítményre.
 
         enableMousePan:
-            title: Screen Edge Panning
+            title: Kameramozgatás a Képernyő Szélén
             description: >-
-                Allows panning the map by moving the cursor to the edges of the screen. The scroll speed depends on the Movement Speed setting.
+                Lehetővé teszi a kamera mozgatását, ha a képernyő szélére viszed az egeret. A mozgatás sebessége a fenti Kameramozgás beállítással állítható.
 
 keybindings:
     title: Keybindings
@@ -1157,17 +1152,17 @@ about:
         Finally, huge thanks to my best friend <a href="https://github.com/niklas-dahl" target="_blank">Niklas</a> - Without our Factorio sessions, this game would never have existed.
 
 changelog:
-    title: Changelog
+    title: Változások
 
 demo:
     features:
-        restoringGames: Restoring savegames
-        importingGames: Importing savegames
-        oneGameLimit: Limited to one savegame
-        customizeKeybindings: Customizing Keybindings
-        exportingBase: Exporting whole Base as Image
+        restoringGames: Mentések visszaállítása
+        importingGames: Mentések importálása
+        oneGameLimit: Egyetlen játékmentés elérhető
+        customizeKeybindings: Gyorsbillentyűk beállítása
+        exportingBase: A teljes gyárkomplexum kimentése képként
 
-    settingNotAvailable: Not available in the demo.
+    settingNotAvailable: Nem elérhető a Demó Verzióban.
 
 tips:
     - A Központ mindenféle bemenetet elfogad, nemcsak az éppen aktuálisan kívánt alakzatot!
@@ -1215,15 +1210,14 @@ tips:
     - Ha közel építesz a Központhoz, útban lesz a következő projektjeidnek.
     - A Fejlesztések lapon a gombostű ikon megnyomásával kitűzheted a képernyőre az aktuális alakzatot.
     - Keverd össze mind a három alapszínt, hogy Fehéret csinálj!
-    # TODO
-    - You have an infinite map, don't cramp your factory, expand!
-    - Also try Factorio! It's my favorite game.
-    - The quad cutter cuts clockwise starting from the top right!
-    - You can download your savegames in the main menu!
-    - This game has a lot of useful keybindings! Be sure to check out the settings page.
-    - This game has a lot of settings, be sure to check them out!
-    - The marker to your hub has a small compass to indicate its direction!
-    - To clear belts, cut the area and then paste it at the same location.
-    - Press F4 to show your FPS and Tick Rate.
-    - Press F4 twice to show the tile of your mouse and camera.
-    - You can click a pinned shape on the left side to unpin it.
+    - A pálya végtelen méretű; ne nyomorgasd sösze a gyáraidat, terjeszkedj!
+    - Próbáld ki a Factorio-t is! Az a kedvenc játékom.
+    - A Negyedelő az alakzat jobb felső negyedétől kezd vágni, az óramutató járásával megegyező irányban!
+    - A játékmentéseidet a Főmenüben tudod lementeni!
+    - A játék nagyon sok hasznos gyorsbillentyűt tartalmaz! Nézd meg őket a Beállítások menüben.
+    - A játék nagyon sok beállítást tartalmaz, mindenképpen nézd meg őket!
+    - A képernyőn lévő Irányítű a Központ irányát mutatja!
+    - A Futószalagok kiürítéséhez vágd ki a területet és illeszd be újra ugyanarra a helyre.
+    - Az F4 megnyomásával láthatod az FPS-edet és a Tick/mp értéket.
+    - Nyomd meg az F4-et kétszer, hogy arra a csempére ugorj, ahol az egered van.
+    - A bal oldalon kitűzött ikonokra kattintáskor megszüntetheted a kitűzést.
