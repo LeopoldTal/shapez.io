@@ -827,14 +827,14 @@ storyRewards:
 
     # Special reward, which is shown when there is no reward actually
     no_reward:
-        title: Next level
+        title: Következő Szint
         desc: >-
-            This level gave you no reward, but the next one will! <br><br> PS: Better not destroy your existing factory - You'll need <strong>all</strong> those shapes later to <strong>unlock upgrades</strong>!
+            Az a szint nem ad jutalmat, a következő viszont fog! <br><br> Tipp: Ne rombold le a megléő gyáraidat - Az <strong>összes</strong> eddigi alakzatra szükséged lesz majd a <strong>fejlesztések feloldásához</strong>!
 
     no_reward_freeplay:
-        title: Next level
+        title: Következő Szint
         desc: >-
-            Congratulations!
+            Gratulálunk!
 
     reward_freeplay:
         title: Freeplay
@@ -844,9 +844,9 @@ storyRewards:
             The HUB outputs the requested shape on the wires layer, so all you have to do is to analyze it and automatically configure your factory based on that.
 
     reward_demo_end:
-        title: End of Demo
+        title: Demó Vége
         desc: >-
-            You have reached the end of the demo version!
+            Elérted a Demó verzió végét!
 
 settings:
     title: Beállítások
@@ -1036,43 +1036,43 @@ settings:
                 Lehetővé teszi a kamera mozgatását, ha a képernyő szélére viszed az egeret. A mozgatás sebessége a fenti Kameramozgás beállítással állítható.
 
 keybindings:
-    title: Keybindings
+    title: Gyorsbillentyűk
     hint: >-
-        Tip: Be sure to make use of CTRL, SHIFT and ALT! They enable different placement options.
+        Tipp: Használd ki a CTRL, SHIFT és ALT billentyűket, amelyek különféle lehelyezési opciókat tesznek lehetővé.
 
-    resetKeybindings: Reset
+    resetKeybindings: Visszaállítás
 
     categoryLabels:
-        general: Application
-        ingame: Game
-        navigation: Navigating
-        placement: Placement
-        massSelect: Mass Select
-        buildings: Building Shortcuts
-        placementModifiers: Placement Modifiers
+        general: Általános
+        ingame: Játék
+        navigation: Kameramozgás
+        placement: Lehelyezés
+        massSelect: Több Kijelölése
+        buildings: Épület Gyorsgombok
+        placementModifiers: Lehelyezés Módosítók
 
     mappings:
-        confirm: Confirm
-        back: Back
-        mapMoveUp: Move Up
-        mapMoveRight: Move Right
-        mapMoveDown: Move Down
-        mapMoveLeft: Move Left
-        mapMoveFaster: Move Faster
-        centerMap: Center Map
+        confirm: Elfogad
+        back: Vissza
+        mapMoveUp: Fel
+        mapMoveRight: Jobbra
+        mapMoveDown: Le
+        mapMoveLeft: Balra
+        mapMoveFaster: Gyorsabb Mozgás
+        centerMap: Térkép Közepe
 
-        mapZoomIn: Zoom in
-        mapZoomOut: Zoom out
-        createMarker: Create Marker
+        mapZoomIn: Nagyítás
+        mapZoomOut: Kicsinytés
+        createMarker: Jelölő Létrehozása
 
-        menuOpenShop: Upgrades
-        menuOpenStats: Statistics
-        menuClose: Close Menu
+        menuOpenShop: Fejlesztések
+        menuOpenStats: Statisztika
+        menuClose: Menü Bezárása
 
-        toggleHud: Toggle HUD
-        toggleFPSInfo: Toggle FPS and Debug Info
-        switchLayers: Switch layers
-        exportScreenshot: Export whole Base as Image
+        toggleHud: Felület ki-/bekapcsolása
+        toggleFPSInfo: FPS és Debug információ megjelenítése
+        switchLayers: Váltás a rétegek között
+        exportScreenshot: Teljes bázis kimentése képként
 
         # --- Do not translate the values in this section
         belt: *belt
@@ -1101,27 +1101,27 @@ keybindings:
         item_producer: Item Producer (Sandbox)
         # ---
 
-        pipette: Pipette
-        rotateWhilePlacing: Rotate
+        pipette: Pipetta
+        rotateWhilePlacing: Forgatás
         rotateInverseModifier: >-
-            Modifier: Rotate CCW instead
-        cycleBuildingVariants: Cycle Variants
-        confirmMassDelete: Delete area
-        pasteLastBlueprint: Paste last blueprint
-        cycleBuildings: Cycle Buildings
-        lockBeltDirection: Enable belt planner
+            Módosító: Forgass ellenkező irányba
+        cycleBuildingVariants: Váltás a változatok között
+        confirmMassDelete: Terület törlése
+        pasteLastBlueprint: Legutóbbi tervrajz beillesztése
+        cycleBuildings: Váltás az épületek között
+        lockBeltDirection: Futószalag iránykeresés engedélyezése
         switchDirectionLockSide: >-
-            Planner: Switch side
+            Iránykereső: Oldal váltása
         copyWireValue: >-
-            Wires: Copy value below cursor
-        massSelectStart: Hold and drag to start
-        massSelectSelectMultiple: Select multiple areas
-        massSelectCopy: Copy area
-        massSelectCut: Cut area
+            Vezetékek: Kurzor alatti érték másolása
+        massSelectStart: Nyomd le és húzd a kezdéshez
+        massSelectSelectMultiple: Több terület kiválasztása
+        massSelectCopy: Terület másolása
+        massSelectCut: Terület kivágása
 
-        placementDisableAutoOrientation: Disable automatic orientation
-        placeMultiple: Stay in placement mode
-        placeInverse: Invert automatic belt orientation
+        placementDisableAutoOrientation: Automatikus irány kikapcsolása
+        placeMultiple: Több lehelyezése
+        placeInverse: Futószalag irányának megfordítása
 
 about:
     title: About this Game
