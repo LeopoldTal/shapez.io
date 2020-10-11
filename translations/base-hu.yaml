@@ -33,13 +33,13 @@ steamPage:
 
         A Shapez.io egy nyugtató játék, amelyben gyárakat kell építened, hogy geometrikus alakzatokat gyárts és automatizálj. Ahogy szintet lépsz, az alakzatok egyre összetettebbek lesznek, és tovább kell terjeszkedned a végtelen pályán.
 
-        És ha ez nem lenne elég, exponenciálisan többet kell termelned az igények kielégítése érdekében - az egyetlen dolog ami segít, az a méret! Amíg az alakzatokat csak feldolgozod a játék elején, később színezned kell őket - ehhez bányászni és keverni kell a színeket!
+        És ha ez nem lenne elég, exponenciálisan többet kell termelned az igények kielégítése érdekében - az egyetlen dolog ami segít, az a termelés mennyisége! Amíg az alakzatokat csak feldolgozod a játék elején, később színezned kell őket - ehhez bányászni és keverni kell a színeket!
 
         A játék Steamen történő megvásárlása hozzáférést biztosít a teljes verzióhoz, de kipróbálhatod a játékot a shapez.io oldalon, és később dönthetsz!
 
     title_advantages: Önálló Verzió Előnyei
     advantages:
-        - <b>12 Új Sszint</b>, összesen 26
+        - <b>12 Új Szint</b>, összesen 26
         - <b>18 Új Épület</b> egy teljesen automatizált gyárhoz!
         - <b>20 Fejlesztési szint</b> sok órányi szórakozáshoz!
         - <b>Vezetékek Frissítés</b> egy teljesen új dimenzióhoz!
@@ -258,11 +258,10 @@ dialogs:
         desc: Adj neki egy nevet, vagy egy alakzat <strong>gyorskódját</strong> (amit <a href="https://viewer.shapez.io" target="_blank">itt</a> tudsz legenerálni)
 
     editSignal:
-        # TODO
-        title: Set Signal # ?
+        title: Jel Beállítása
         descItems: >-
-            Choose a pre-defined item:
-        descShortKey: ... or enter the <strong>short key</strong> of a shape (Which you can generate <link>here</link>)
+            Válassz egy előre definiált elemet:
+        descShortKey: ... vagy írd be egy alakzat <strong>gyorskódját</strong>, amit <link>itt</link> generálhatsz le)
 
     markerDemoLimit:
         desc: A Demó verzióban csak két Jelölőd lehet. Vásárold meg az Önálló verziót, hogy feloldd ezt a korlátozást!
@@ -524,26 +523,25 @@ buildings:
 
     # Balancer
     balancer:
-        # TODO az egész "balancer"
         default:
-            name: &balancer Balancer
-            description: Multifunctional - Evenly distributes all inputs onto all outputs.
+            name: &balancer Kiegyenlítő
+            description: Többfunkciós - Egyenlően elosztja az összes bemenetet az összes kimenetre.
 
         merger:
-            name: Merger (compact)
-            description: Merges two conveyor belts into one.
+            name: Összevonó (kompakt)
+            description: Egyesít két futószalagot.
 
         merger-inverse:
-            name: Merger (compact)
-            description: Merges two conveyor belts into one.
+            name: Összevonó (kompakt)
+            description: Egyesít két futószalagot.
 
         splitter:
-            name: Splitter (compact)
-            description: Splits one conveyor belt into two.
+            name: Elosztó (kompakt)
+            description: Kettéoszt egy futószalagot.
 
         splitter-inverse:
-            name: Splitter (compact)
-            description: Splits one conveyor belt into two.
+            name: Elosztó (kompakt)
+            description: Kettéoszt egy futószalagot.
 
     cutter:
         default:
@@ -588,9 +586,8 @@ buildings:
             description: Beszínezi az alakzatokat a baloldali bemeneteken a fenti bemeneten érkező színnel.
 
         quad:
-            # TODO második mondat
             name: Festő (Négyszeres)
-            description: Az alakzat négy negyedét különböző színekkel lehet vele színezni. Only slots with a <strong>truthy signal</strong> on the wires layer will be painted!
+            description: Az alakzat négy negyedét különböző színekkel lehet vele színezni. Csak azokat a negyedeket festi le, amik a Vezeték rétegen <strong>igaz jelet</strong> kapnak!
 
     trash:
         default:
@@ -609,12 +606,12 @@ buildings:
 #
         default:
             name: &storage Raktár
-            description: Eltárolja a fölösleges elemeket, egy meghatározott kapacitásig. Prioritizes the left output and can be used as an overflow gate.
+            description: Eltárolja a fölösleges elemeket, egy meghatározott kapacitásig. A bal oldai kimenetet részesíti előnyben. Használható túlcsorduló kapuként.
 
     wire:
         default:
             name: &wire Vezeték
-            description: &wire_desc Jeleket visz, ami lehet alakzat, szín vagy logikai érték (1 vagy 0). Különböző színű vezetékek nem kapcsolódnak egymáshoz.
+            description: &wire_desc Jelet hordoz, amely lehet alakzat, szín vagy logikai érték (1 vagy 0). Különböző színű vezetékek nem kapcsolódnak egymáshoz.
 
         second:
             name: *wire
@@ -622,18 +619,18 @@ buildings:
 
     wire_tunnel:
         default:
-            name: &wire_tunnel Wire Crossing
-            description: Allows two wires to cross without connecting to each other.
+            name: &wire_tunnel Vezeték Kereszteződés
+            description: Áthidal két vezetéket anélkül, hogy kapcsolódnának egymáshoz.
 
     constant_signal:
         default:
             name: &constant_signal Állandó jel
-            description: Állandó jelet bocsát ki, ami lehet egy alakzat, szín vagy logikai érték (1 vagy 0).
+            description: Állandó jelet bocsát ki, amely lehet egy alakzat, szín vagy logikai érték (1 vagy 0).
 
     lever:
         default:
             name: &lever Kapcsoló
-            description: Logikai 1 vagy 0 értéket bocsát ki a Vezeték rétegen, amivel épületeket, például alakzat szűrőket lehet vezérelni.
+            description: Logikai 1 vagy 0 értéket bocsát ki a Vezeték rétegen, amivel épületeket lehet vezérelni (például alakzat szűrőket).
 
     logic_gate:
         default:
@@ -652,15 +649,11 @@ buildings:
     transistor:
         default:
             name: &transistor Tranzisztor
-            description: &transistor_desc Továbbítja az alsó jelet, ha az oldal jel igaz (egy alakzat, szín vagy "1").
+            description: &transistor_desc Továbbítja az alsó jelet, ha az oldalsó jel igaz.
 
         mirrored:
             name: *transistor
             description: *transistor_desc
-
-#
-# Itt járok -SGG
-#
 
     filter:
         default:
