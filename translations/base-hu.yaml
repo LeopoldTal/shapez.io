@@ -595,15 +595,6 @@ buildings:
             description: Bármelyik irányból lehet hozzá csatlakozni, és megsemmisíti a beleküldött elemeket. Örökre.
 
     storage:
-#
-# INNENTŐL LEFELÉ AZ EGÉSZ DOKUMENTUM EGY NAGY
-# ████████╗ ██████╗ ██████╗  ██████╗
-# ╚══██╔══╝██╔═══██╗██╔══██╗██╔═══██╗
-#    ██║   ██║   ██║██║  ██║██║   ██║
-#    ██║   ██║   ██║██║  ██║██║   ██║
-#    ██║   ╚██████╔╝██████╔╝╚██████╔╝
-#    ╚═╝    ╚═════╝ ╚═════╝  ╚═════╝
-#
         default:
             name: &storage Raktár
             description: Eltárolja a fölösleges elemeket, egy meghatározott kapacitásig. A bal oldai kimenetet részesíti előnyben. Használható túlcsorduló kapuként.
@@ -655,6 +646,7 @@ buildings:
             name: *transistor
             description: *transistor_desc
 
+# Wires fordítások, TODO
     filter:
         default:
             name: &filter Filter
@@ -709,84 +701,84 @@ buildings:
 storyRewards:
     # Those are the rewards gained from completing the store
     reward_cutter_and_trash:
-        title: Cutting Shapes
-        desc: You just unlocked the <strong>cutter</strong>, which cuts shapes in half from top to bottom <strong>regardless of its orientation</strong>!<br><br>Be sure to get rid of the waste, or otherwise <strong>it will clog and stall</strong> - For this purpose I have given you the <strong>trash</strong>, which destroys everything you put into it!
+        title: Alakzatok Vágása
+        desc: Feloldottad a <strong>Vágót</strong>, amely függőlegesen félbevág alakzatokat, <strong>függetlenül az orientációtól</strong>!<br><br>Szabadulj meg a feleslegtől, ellenkező esetben <strong>eldugulhat a rendszer</strong> - Ezért kaptál egy <strong>Kukát</strong>, amely elpusztít mindent, amit belevezetsz!
 
     reward_rotater:
-        title: Rotating
-        desc: The <strong>rotater</strong> has been unlocked! It rotates shapes clockwise by 90 degrees.
+        title: Forgatás
+        desc: Feloldottad a <strong>Forgatót</strong>, amely az óramutató járásával 90 fokban forgatja el az alakzatokat.
 
     reward_painter:
-        title: Painting
+        title: Festés
         desc: >-
-            The <strong>painter</strong> has been unlocked - Extract some color veins (just as you do with shapes) and combine it with a shape in the painter to color them!<br><br>PS: If you are colorblind, there is a <strong>colorblind mode</strong> in the settings!
+            Feloldottad a <strong>Festőt</strong> - Bányássz ki színeket (úgy, ahogy az alakzatokat eddig) és fesd le az alakzatokat a Festőben!<br><br>Tipp: Ha színtévesztő vagy, a Beállításokban bekapcsolhatod a <strong>Színtévesztő Módot</strong>!
 
     reward_mixer:
-        title: Color Mixing
-        desc: The <strong>mixer</strong> has been unlocked - It mixes two colors using <strong>additive blending</strong>!
+        title: Színkeverés
+        desc: Feloldottad a <strong>Színkeverőt</strong>, amely két színt kever össze <strong>additív színkeveréssel</strong>!
 
     reward_stacker:
-        title: Stacker
-        desc: You can now combine shapes with the <strong>stacker</strong>! Both inputs are combined, and if they can be put next to each other, they will be <strong>fused</strong>. If not, the right input is <strong>stacked on top</strong> of the left input!
+        title: Egyesítő
+        desc: Kombinálj össze elemeket az <strong>Egyesítővel</strong>! Ha a két bemenet egymás mellé helyezhető, akkor <strong>összeolvasztja</strong> őket. Ha nem, a jobb oldali bemenetet <strong>ráhelyezi</strong> a bal oldali bemeneten érkező alakzat tetejére!
 
     reward_balancer:
-        title: Balancer
-        desc: The multifunctional <strong>balancer</strong> has been unlocked - It can be used to build bigger factories by <strong>splitting and merging items</strong> onto multiple belts!
+        title: Kiegyenlítő
+        desc: Feloldottad a többfunkciós <strong>Kiegyenlítőt</strong> - Nagyobb, hatékonyabb gyárat építhetsz bele oly módon, hogy <strong>elosztasz vagy összevonsz elemeket</strong> több futószalagra!
 
     reward_tunnel:
-        title: Tunnel
-        desc: The <strong>tunnel</strong> has been unlocked - You can now tunnel items below belts and buildings with it!
+        title: Alagút
+        desc: Feloldottad az <strong>Alagutat</strong> - Átvihetsz egy futószalagot másik futószalag, vagy akár épület alatt!
 
     reward_rotater_ccw:
-        title: CCW Rotating
-        desc: You have unlocked a variant of the <strong>rotater</strong> - It allows you to rotate shapes counter-clockwise! To build it, select the rotater and <strong>press 'T' to cycle through its variants</strong>!
+        title: Ellentétes Forgatás
+        desc: Feloldottad a <strong>Forgató</strong> ellentétes irányú variánsát, amellyel az óramutató járásával ellentétes irányban forgathatsz elemeket! Használatához válaszd ki a Forgatót és <strong>nyomj 'T'-t az irány változtatásához</strong>!
 
     reward_miner_chainable:
-        title: Chaining Extractor
+        title: Összeköthető Bánya
         desc: >-
-            You have unlocked the <strong>chained extractor</strong>! It can <strong>forward its resources</strong> to other extractors so you can more efficiently extract resources!<br><br>
-            PS: The old extractor has been replaced in your toolbar now!
+            Feloldottad az <strong>Összeköthető Bányát</strong>! Segítségével <strong>továbbadhatod a kibányászott erőforrást</strong> egy másik Bányának, így hatékonyabban bányászhatsz!<br><br>
+            Tipp: A régi Bányát lecseréltük az Eszköztáradon!
 
     reward_underground_belt_tier_2:
-        title: Tunnel Tier II
-        desc: You have unlocked a new variant of the <strong>tunnel</strong> - It has a <strong>bigger range</strong>, and you can also mix-n-match those tunnels now!
+        title: Alagút, II. Szint
+        desc: Feoldottad az <strong>Alagút</strong> fejlesztett változatát - <strong>Nagyobb távolságot</strong> képes lefedni, és mostmár variálhatod az Alagutak típusait!
 
     reward_merger:
-        title: Compact Merger
+        title: Kompakt Összevonó
         desc: >-
-            You have unlocked a <strong>merger</strong> variant of the <strong>balancer</strong> - It accepts two inputs and merges them into one belt!
+            Feloldottad a <strong>Kiegyenlítő</strong> egy új variánsát, az <strong>Összevonót</strong>, amely két bemenetből csinál egy Futószalagot!
 
     reward_splitter:
-        title: Compact Splitter
+        title: Kompakt Elosztó
         desc: >-
-            You have unlocked a <strong>splitter</strong> variant of the <strong>balancer</strong> - It accepts one input and splits them into two!
+            Feloldottad a <strong>Kiegyenlítő</strong> egy új variánsát, az <strong>Elosztót</strong>, amely egy bemenetből csinál két Futószalagot!
 
     reward_belt_reader:
-        title: Belt reader
+        title: Futószalag-mérő
         desc: >-
-            You have now unlocked the <strong>belt reader</strong>! It allows you to measure the throughput of a belt.<br><br>And wait until you unlock wires - then it gets really useful!
+            Feloldottad a <strong>Futószalag-mérőt</strong>! Segítségével megmérheted a Futószalag átmenő teljesítményét.<br><br>Várj csak, amíg feloldod a Vezetékeket - utána lesz csak igazán hasznos!
 
     reward_cutter_quad:
-        title: Quad Cutter
-        desc: You have unlocked a variant of the <strong>cutter</strong> - It allows you to cut shapes in <strong>four parts</strong> instead of just two!
+        title: Négybevágó
+        desc: Feloldottad a <strong>Vágó</strong> egy új variánsát, a Negyedelőt, amely <strong>négy részre vágja</strong> az alakzatokat kettő helyett!
 
     reward_painter_double:
-        title: Double Painting
-        desc: You have unlocked a variant of the <strong>painter</strong> - It works similar to the regular painter but processes <strong>two shapes at once</strong>, consuming just one color instead of two!
+        title: Dupla Festés
+        desc: Feloldottad a <strong>Festő</strong> egy új variánsát - Ugyanúgy működik, mint a sima Festő, de <strong>két alakzatot fest le egyszerre</strong>, kettő helyett egyetlen festék felhasználásával!
 
     reward_storage:
-        title: Storage
+        title: Raktár
         desc: >-
-            You have unlocked the <strong>storage</strong> building - It allows you to store items up to a given capacity!<br><br>
-            It priorities the left output, so you can also use it as an <strong>overflow gate</strong>!
+            Feloldottad a <strong>Raktárat</strong>, amelyben meghatározott számú elemet tudsz eltárolni!<br><br>
+            A bal oldali kimenetet részesíti előnyben, így <strong>túlcsorduló kapuként</strong> is használható!
 
     reward_blueprints:
-        title: Blueprints
-        desc: You can now <strong>copy and paste</strong> parts of your factory! Select an area (Hold CTRL, then drag with your mouse), and press 'C' to copy it.<br><br>Pasting it is <strong>not free</strong>, you need to produce <strong>blueprint shapes</strong> to afford it! (Those you just delivered).
+        title: Tervrajzok
+        desc: Innentől lehetőséged van <strong>másolni/beilleszteni</strong> a gyárad bizonyos részeit! Jelölj ki egy területet (Nyomd a CTRL-t, és húzd az egeredet), majd nyomj 'Ctrl+C'-t a másoláshoz.<br><br>A beillesztés <strong>nincs ingyen</strong>; <strong>tervrajz alakzatokat</strong> kell gyártani hozzá! (Amiket az imént szállítottál le).
 
     reward_rotater_180:
-        title: Rotater (180°)
-        desc: You just unlocked the 180 degrees <strong>rotater</strong>! - It allows you to rotate a shape by 180 degress (Surprise! :D)
+        title: Forgató (180°)
+        desc: Feloldottad a <strong>180 fokos Forgatót</strong>, amellyel megfordíthatsz egy alakzatot 180 fokban (Meglepő, mi? :D)
 
     reward_wires_painter_and_levers:
         title: >-
