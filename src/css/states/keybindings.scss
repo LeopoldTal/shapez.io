@@ -26,6 +26,14 @@
                 .mapping {
                     color: $colorBlueBright;
                     text-align: center;
+
+                    .keybinding {
+                        font-family: $mainFont;
+
+                        &.mousebinding {
+                            background-size: 100%;
+                        }
+                    }
                 }
 
                 button {

@@ -3,7 +3,6 @@ import { T } from "../../../translations";
 import {
     getStringForKeyCode,
     KEYCODE_LMB,
-    KEYCODE_MMB,
     KEYCODE_RMB,
     KEYMAPPINGS,
 } from "../../key_action_mapper";
@@ -281,26 +280,21 @@ export class HUDKeybindingOverlay extends BaseHUDPart {
             for (let k = 0; k < handle.keys.length; ++k) {
                 const key = handle.keys[k];
 
-                switch (key) {
-                    case KEYCODE_LMB:
-                        html += `<code class="keybinding leftMouse"></code>`;
-                        break;
-                    case KEYCODE_RMB:
-                        html += `<code class="keybinding rightMouse"></code>`;
-                        break;
-                    case KEYCODE_MMB:
-                        html += `<code class="keybinding middleMouse"></code>`;
-                        break;
-                    case DIVIDER_TOKEN:
-                        html += `<i></i>`;
-                        break;
-                    case ADDER_TOKEN:
-                        html += `+`;
-                        break;
-                    default:
-                        html += `<code class="keybinding">${getStringForKeyCode(
-                            mapper.getBinding(/** @type {KeyCode} */ (key)).keyCode
-                        )}</code>`;
+                if (key.hasOwnProperty('keyCode')) { // regular keybindings
+                    html += getStringForKeyCode(
+                        mapper.getBinding(/** @type {KeyCode} */ (key)).keyCode
+                    );
+                } else { // special: mousebindings and separator tokens
+                    switch (key) {
+                        case DIVIDER_TOKEN:
+                            html += `<i></i>`;
+                            break;
+                        case ADDER_TOKEN:
+                            html += `+`;
+                            break;
+                        default:
+                            html += getStringForKeyCode(/** @type {number} */ (key));
+                    }
                 }
             }
             html += `<label>${handle.label}</label>`;

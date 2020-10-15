@@ -29,6 +29,41 @@
         }
     }
 
+    .keybinding {
+        background-color: #fff;
+        text-transform: uppercase;
+        @include S(padding, 1.5px, 3px, 2px);
+        @include PlainText;
+        @include S(border-radius, $globalBorderRadius);
+        &,
+        > span {
+            @include S(font-size, 9px);
+            @include S(line-height, 11px);
+            font-weight: bold !important;
+            text-shadow: none !important;
+        }
+        font-weight: bold;
+        color: $accentColorDark;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        @include S(min-width, 12px);
+        display: inline-flex;
+        position: absolute;
+        @include S(bottom, 0px);
+        @include S(right, 0px);
+        z-index: 999;
+        box-sizing: border-box;
+        @include S(height, 12px);
+        overflow: hidden;
+        border: #{D(0px)} solid $accentColorDark;
+        .keybinding_space {
+            @include S(font-size, 17px);
+            @include S(line-height, 11px);
+            @include S(margin-top, -12px);
+        }
+    }
+
     #ingame_Canvas {
         position: absolute;
         top: 0;

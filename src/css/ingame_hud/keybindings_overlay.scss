@@ -46,15 +46,6 @@
             top: unset;
             left: unset;
             margin: 0;
-            &.rightMouse {
-                /* @load-async */
-                background: #fff uiResource("icons/mouse_right.png") center center / 85% no-repeat;
-            }
-
-            &.leftMouse {
-                /* @load-async */
-                background: #fff uiResource("icons/mouse_left.png") center center / 85% no-repeat;
-            }
         }
 
         label {

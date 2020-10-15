@@ -183,10 +183,8 @@ export class Dialog {
                 if (isEnter || isEscape) {
                     // if (this.app.settings.getShowKeyboardShortcuts()) {
                     // Show keybinding
-                    const spacer = document.createElement("code");
-                    spacer.classList.add("keybinding");
-                    spacer.innerHTML = getStringForKeyCode(isEnter ? kbEnter : kbCancel);
-                    button.appendChild(spacer);
+                    const spacer = getStringForKeyCode(isEnter ? kbEnter : kbCancel);
+                    button.innerHTML = spacer;
                     // }
 
                     if (isEnter) {

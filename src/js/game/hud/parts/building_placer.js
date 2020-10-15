@@ -130,7 +130,7 @@ export class HUDBuildingPlacer extends HUDBuildingPlacerLogic {
 
         this.buildingInfoElements.hotkey.innerHTML = T.ingame.buildingPlacement.hotkeyLabel.replace(
             "<key>",
-            "<code class='keybinding'>" + binding.getKeyCodeString() + "</code>"
+            binding.getKeyCodeString()
         );
 
         this.buildingInfoElements.tutorialImage.setAttribute(
@@ -194,11 +194,9 @@ export class HUDBuildingPlacer extends HUDBuildingPlacerLogic {
             ["explanation"],
             T.ingame.buildingPlacement.cycleBuildingVariants.replace(
                 "<key>",
-                "<code class='keybinding'>" +
-                    this.root.keyMapper
-                        .getBinding(KEYMAPPINGS.placement.cycleBuildingVariants)
-                        .getKeyCodeString() +
-                    "</code>"
+                this.root.keyMapper
+                    .getBinding(KEYMAPPINGS.placement.cycleBuildingVariants)
+                    .getKeyCodeString()
             )
         );
 

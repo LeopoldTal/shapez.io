@@ -116,156 +116,97 @@ export const KEYCODE_LMB = 1;
 export const KEYCODE_MMB = 2;
 export const KEYCODE_RMB = 3;
 
+const MOUSEBINDING_HTML_DESCRIPTIONS = {
+    [KEYCODE_LMB]: `<code class="keybinding mousebinding" data-icon="icons/mouse_left.png"></code>`,
+    [KEYCODE_MMB]: `<code class="keybinding mousebinding" data-icon="icons/mouse_middle.png"></code>`,
+    [KEYCODE_RMB]: `<code class="keybinding mousebinding" data-icon="icons/mouse_right.png"></code>`
+};
+
+const KEYBINDING_TEXT_DESCRIPTIONS = {
+    4: "MB4",
+    5: "MB5",
+    8: "⌫",
+    9: T.global.keys.tab,
+    13: "⏎",
+    16: "⇪",
+    17: T.global.keys.control,
+    18: T.global.keys.alt,
+    19: "PAUSE",
+    20: "CAPS",
+    27: T.global.keys.escape,
+    32: T.global.keys.space,
+    33: "PGUP",
+    34: "PGDOWN",
+    35: "END",
+    36: "HOME",
+    37: "⬅",
+    38: "⬆",
+    39: "➡",
+    40: "⬇",
+    44: "PRNT",
+    45: "INS",
+    46: "DEL",
+    93: "SEL",
+    96: "NUM 0",
+    97: "NUM 1",
+    98: "NUM 2",
+    99: "NUM 3",
+    100: "NUM 4",
+    101: "NUM 5",
+    102: "NUM 6",
+    103: "NUM 7",
+    104: "NUM 8",
+    105: "NUM 9",
+    106: "*",
+    107: "+",
+    109: "-",
+    110: ".",
+    111: "/",
+    112: "F1",
+    113: "F2",
+    114: "F3",
+    115: "F4",
+    116: "F5",
+    117: "F6",
+    118: "F7",
+    119: "F8",
+    120: "F9",
+    121: "F10",
+    122: "F11",
+    123: "F12",
+    144: "NUMLOCK",
+    145: "SCRLOCK",
+    182: "COMP",
+    183: "CALC",
+    186: ";",
+    187: "+",
+    188: ",",
+    189: "-",
+    190: ".",
+    191: "/",
+    219: "[",
+    220: "\\",
+    221: "]",
+    222: "'",
+};
+
 /**
  * Returns a keycode -> string
  * @param {number} code
  * @returns {string}
  */
 export function getStringForKeyCode(code) {
-    // @todo: Refactor into dictionary
-    switch (code) {
-        case KEYCODE_LMB:
-            return "LMB";
-        case KEYCODE_MMB:
-            return "MMB";
-        case KEYCODE_RMB:
-            return "RMB";
-        case 4:
-            return "MB4";
-        case 5:
-            return "MB5";
-        case 8:
-            return "⌫";
-        case 9:
-            return T.global.keys.tab;
-        case 13:
-            return "⏎";
-        case 16:
-            return "⇪";
-        case 17:
-            return T.global.keys.control;
-        case 18:
-            return T.global.keys.alt;
-        case 19:
-            return "PAUSE";
-        case 20:
-            return "CAPS";
-        case 27:
-            return T.global.keys.escape;
-        case 32:
-            return T.global.keys.space;
-        case 33:
-            return "PGUP";
-        case 34:
-            return "PGDOWN";
-        case 35:
-            return "END";
-        case 36:
-            return "HOME";
-        case 37:
-            return "⬅";
-        case 38:
-            return "⬆";
-        case 39:
-            return "➡";
-        case 40:
-            return "⬇";
-        case 44:
-            return "PRNT";
-        case 45:
-            return "INS";
-        case 46:
-            return "DEL";
-        case 93:
-            return "SEL";
-        case 96:
-            return "NUM 0";
-        case 97:
-            return "NUM 1";
-        case 98:
-            return "NUM 2";
-        case 99:
-            return "NUM 3";
-        case 100:
-            return "NUM 4";
-        case 101:
-            return "NUM 5";
-        case 102:
-            return "NUM 6";
-        case 103:
-            return "NUM 7";
-        case 104:
-            return "NUM 8";
-        case 105:
-            return "NUM 9";
-        case 106:
-            return "*";
-        case 107:
-            return "+";
-        case 109:
-            return "-";
-        case 110:
-            return ".";
-        case 111:
-            return "/";
-        case 112:
-            return "F1";
-        case 113:
-            return "F2";
-        case 114:
-            return "F3";
-        case 115:
-            return "F4";
-        case 116:
-            return "F5";
-        case 117:
-            return "F6";
-        case 118:
-            return "F7";
-        case 119:
-            return "F8";
-        case 120:
-            return "F9";
-        case 121:
-            return "F10";
-        case 122:
-            return "F11";
-        case 123:
-            return "F12";
-
-        case 144:
-            return "NUMLOCK";
-        case 145:
-            return "SCRLOCK";
-        case 182:
-            return "COMP";
-        case 183:
-            return "CALC";
-        case 186:
-            return ";";
-        case 187:
-            return "+";
-        case 188:
-            return ",";
-        case 189:
-            return "-";
-        case 190:
-            return ".";
-        case 191:
-            return "/";
-        case 219:
-            return "[";
-        case 220:
-            return "\\";
-        case 221:
-            return "]";
-        case 222:
-            return "'";
+    if (MOUSEBINDING_HTML_DESCRIPTIONS.hasOwnProperty(code)) {
+        return MOUSEBINDING_HTML_DESCRIPTIONS[code];
     }
 
-    return (48 <= code && code <= 57) || (65 <= code && code <= 90)
-        ? String.fromCharCode(code)
-        : "[" + code + "]";
+    const textDescription = KEYBINDING_TEXT_DESCRIPTIONS.hasOwnProperty(code)
+        ? KEYBINDING_TEXT_DESCRIPTIONS[code]
+        : (48 <= code && code <= 57) || (65 <= code && code <= 90)
+            ? String.fromCharCode(code)
+            : "[" + code + "]";
+
+    return `<code class="keybinding">${textDescription}</code>`;
 }
 
 export class Keybinding {
@@ -311,21 +252,6 @@ export class Keybinding {
      */
     add(receiver, scope = null) {
         this.signal.add(receiver, scope);
-    }
-
-    /**
-     * @param {Element} elem
-     * @returns {HTMLElement} the created element, or null if the keybindings are not shown
-     *  */
-    appendLabelToElement(elem) {
-        if (IS_MOBILE) {
-            return null;
-        }
-        const spacer = document.createElement("code");
-        spacer.classList.add("keybinding");
-        spacer.innerHTML = getStringForKeyCode(this.keyCode);
-        elem.appendChild(spacer);
-        return spacer;
     }
 
     /**
